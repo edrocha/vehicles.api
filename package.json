@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "build": "sucrase ./src -d ./dist --transform typescript,imports",
+    "start": "node build/server.js",
+    "build": "tsc",
     "test": "mocha -r ts-node/register './src/tests/**/*.ts'"
   },
   "author": "\"Edson Rocha\"",
   "license": "ISC",
   "dependencies": {
+    "@types/mocha": "^10.0.8",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
