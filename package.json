@@ -4,10 +4,10 @@
   "description": "REST API node vehicle",
   "main": "index.js",
   "scripts": {
+    "start": "node  ./build/server.js",
     "dev": "nodemon src/server.ts",
-    "start": "node build/server.js",
-    "build": "tsc",
-    "test": "mocha -r ts-node/register './src/tests/**/*.ts'"
+    "build": "sucrase ./src -d ./build --transforms typescript,imports",
+    "test": "mocha -r ts-node/register './src/tests/*/.ts'"
   },
   "author": "\"Edson Rocha\"",
   "license": "ISC",
