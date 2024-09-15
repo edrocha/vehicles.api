@@ -4,7 +4,7 @@
 
  import express from 'express'
 import cors from 'cors'
-import {ROUTES} from '../src/routes/routesIndex'
+import {ROUTES} from './routes/routesIndex'
  import bodyParser from 'body-parser';
  
  
