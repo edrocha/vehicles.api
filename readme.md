@@ -1,4 +1,4 @@
-[20:56, 15/09/2024] Alex Cogna: # Vehicles-Api
+# Vehicles-Api
 Uma api de vehicles com NodeJs
 
 rodar o script de database em scripts o arquivo db.sql
